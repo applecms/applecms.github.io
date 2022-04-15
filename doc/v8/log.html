@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>苹果CMS-v8系统标签 - 苹果CMS官网</title>
+    <meta name="keywords" content="苹果CMS,maccms,电影程序,影视系统,视频点播系统,网页播放器,ckplayer,视频解析" />
+    <meta name="description" content="苹果CMS是国内优秀的开源PHP建站系统，擅长电影程序、视频程序、影视系统这一块，在主流建站系统中特色鲜明，以灵活、小巧、兼容性好、负载强等优点而深受许多站长的喜爱。" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="//cdn.staticfile.org/layui/2.4.3/css/layui.min.css" media="all">
+    <link rel="stylesheet" href="/static/css/global.css" media="all">
+</head>
+<body class="site-home" style="background-color: #fbfcfd;">
+    <div class="layui-header header header-index">
+        <div class="layui-main">
+            <a class="logo" href="/">苹果CMS爱好者</a>
+            <div class="layui-form component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"><a href="/">首页</a></li>
+                <li class="layui-nav-item"><a href="/down.html">下载</a></li>
+                <li class="layui-nav-item"><a href="/doc/v10/index.html">文档</a></li>
+                <li class="layui-nav-item layui-hide-xs"><a href="https://t.me/maccms_pro" target="_blank">加TG群</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+        <script src="/static/js/html5.min.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+    <div class="layui-main site-inline site-changelog">
+        <div class="site-tree">
+            <div class="layui-form" style="height: 38px; margin: 10px 13px 0 0;">
+                <select lay-filter="tabVersion">
+                    <option value="v10">v10</option>
+                    <option value="v8" selected>v8</option></select>
+            </div>
+            <ul class="layui-tree">
+                <li>
+                    <h2>基础说明</h2></li>
+                <li class="site-tree-noicon ">
+                    <a href="/doc/v8/">
+                        <cite>开始使用</cite>
+                        <em>Getting Started</em></a>
+                </li>
+                <li class="site-tree-noicon ">
+                    <a href="/doc/v8/faq.html">
+                        <cite>常见问题</cite>
+                        <em>FAQ</em></a>
+                </li>
+                <li class="site-tree-noicon ">
+                    <a href="/doc/v8/label.html">
+                        <cite>模板标签</cite>
+                        <em>TempLate</em></a>
+                </li>
+                <li class="site-tree-noicon layui-this">
+                    <a href="/doc/v8/log.html">
+                        <cite>更新日志</cite>
+                        <em>Change Log</em></a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-content">
+            <h1 class="site-h1">更新日志</h1>
+            <ul class="layui-timeline">
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1026</h2></div>
+                        <blockquote class="layui-elem-quote">1，加强后台表单token安全验证，防止跨站攻击。
+                            <br>2，修复支持php7.2+。
+                            <br>3，优化后台挂马清理功能。
+                            <br>4，其他细节。
+                            <br></blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1023</h2></div>
+                        <blockquote class="layui-elem-quote">1，新增全局解析接口配置和player/parse.js文件。
+                            <br>2，新增独立解析接口配置。
+                            <br>3，优化播放器代码player.js,playerconfig.js.bak务必替换并更新缓存。
+                            <br>4，优化点击量更新。
+                            <br>5，其他细节。
+                            <br></blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1022</h2></div>
+                        <blockquote class="layui-elem-quote">1，优化mysql5.7+安装问题。
+                            <br>2，优化php7.2+使用问题。
+                            <br>3，其他细节。
+                            <br></blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1021</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复站群模式下页面缓存冲突的问题。
+                            <br>2，其他细节。
+                            <br></blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1018</h2></div>
+                        <blockquote class="layui-elem-quote">1，新增memcached缓存配置。
+                            <br>2，入库接口支持subname副标字段入库。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1017</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复选择多个数据操作失败的问题。
+                            <br>2，安装时默认站外入库密码改为随机10位。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1015</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复生成的拼音中丢失数字的问题。
+                            <br>2，优化if标签解析防止死循环。
+                            <br>3，优化采集入库过滤防止if标签入库(后台和定时任务)。
+                            <br>4，优化后台参数配置-常用新增安全过滤字段功能配置，改为默认开启状态。
+                            <br>5，优化后台挂马检测清理新型if后门。
+                            <br>6，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1010</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复preg_match另一个原因引起的注入问题。
+                            <br>2，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2020.1006</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复上次升级在线更新导致低版本php报错的问题。
+                            <br>2，加强后台安全限制防止写入不安全内容。
+                            <br>3，前台标签和api接口将自动过滤html和if标签。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2019.1003</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复php函数preg_match字符串过长引起的安全过滤脚本失效的问题。
+                            <br>2，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2019.1002</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复自动生成tag的问题。
+                            <br>2，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2019.1001</h2></div>
+                        <blockquote class="layui-elem-quote">1，修改更新服务地址。
+                            <br>2，新增加自定义资源库管理。
+                            <br>3，整合站群插件。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.10.30</h2></div>
+                        <blockquote class="layui-elem-quote">1，优化数据库挂马清理功能。
+                            <br>2，视频编辑页面新增获取豆瓣数据信息。
+                            <br>3，微信对接新增返回搜索页面。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.10.13</h2></div>
+                        <blockquote class="layui-elem-quote">1，应对微信公共号最新规则，提供图文(1条)、文字(最多20条)两种返回方案，后台可配置。
+                            <br>2，修复后台https时不显示官方更新提示的问题。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.10.08</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复使用远程存储图片时微信接口显示图片的问题，并且本地图片自适应http和https协议。
+                            <br>2，优化后台数据库挂马检测功能。
+                            <br>3，修复定时任务边采集边同步图片的问题。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.09.25</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复部分环境下配置定时任务报错的问题。
+                            <br>2，新增json格式api接口v10可用。
+                            <br>3，修复上个版本边采集边同步图片有时候会重复的问题。
+                            <br>4，新增数据库挂马代码检测功能，可减轻新手查杀数据库挂马的工作。
+                            <br>5，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.09.18</h2></div>
+                        <blockquote class="layui-elem-quote">1，调整API解析xml的方式增强兼容性。
+                            <br>2，更新安全拦截脚本。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.09.13</h2></div>
+                        <blockquote class="layui-elem-quote">1，调整将所有展示到模板里的数据名称过滤掉html元素展示，减少挂马影响，包括分类名、专题名等等。
+                            <br>2，很多站长还在用18年之前的版本，鉴于安全考虑，请更新到最新版本。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.08.10</h2></div>
+                        <blockquote class="layui-elem-quote">1，累积性更新。
+                            <br>2，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2018.02.04</h2></div>
+                        <blockquote class="layui-elem-quote">1，修改采集资源库时将过滤html避免被挂暗链。
+                            <br>2，修改入口文件逻辑判断。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.09.27</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复采集插件兼容性问题。
+                            <br>2，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.06.26</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复自动生成tags的问题。
+                            <br>2，修复生成静态页面和定时生成当天数据的问题。
+                            <br>3，优化安全过滤，防止误拦截。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.05.05</h2></div>
+                        <blockquote class="layui-elem-quote">1，全面支持PHP7+内核，运行速度更快。
+                            <br>2，优化安全过滤，防止误拦截。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.04.30</h2></div>
+                        <blockquote class="layui-elem-quote">1，优化程序安全过滤，增强防范，减少误拦截。
+                            <br>2，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.04.07</h2></div>
+                        <blockquote class="layui-elem-quote">1，播放器宽度支持自适应 0为自适应。
+                            <br>2，增加手机播放器宽度和高度设置。
+                            <br>3，增加手机模板自动显示功能。
+                            <br>4，增加API收费选项。
+                            <br>5，增加微信公共号接口。
+                            <br>6，修复https图片不显示的问题。
+                            <br>7，修复1处安全漏洞，重要！
+                            <br>8，注意：由于新增配置项，更新后请进入后台保存【播放器设置-输入手机播放大小】【站点设置】。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.02.04</h2></div>
+                        <blockquote class="layui-elem-quote">1，重要更新，修复一处安全隐患。
+                            <br>2，优化系统过滤脚本。
+                            <br>3，修复文章搜索筛选条件不起作用的问题。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2017.01.25</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复模板解析的一处问题。
+                            <br>2，修复火车头接口的一处问题。
+                            <br>3，为了安全，限制必须修改后台默认admin目录名。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2016.11.30</h2></div>
+                        <blockquote class="layui-elem-quote">1，搜索支持副标题模糊查询。
+                            <br>2，url的参数自动去除前后空格。
+                            <br>3，火车头发布数据自动生成html静态文件。
+                            <br>4，修复联盟资源采集，火车头采集不覆盖图片的问题。
+                            <br>5，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2015.05.30</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复重要安全补丁，请务必更新！。
+                            <br>2，修复上次更新出现的问题。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2015.05.23</h2></div>
+                        <blockquote class="layui-elem-quote">1，累计更新修复部分bug。
+                            <br>2，优化安全脚本，增强sql注入检测拦截，增强安全性。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2015.04.10</h2></div>
+                        <blockquote class="layui-elem-quote">1，优化部分sql语句，提高查询效率。
+                            <br>2，优化vod、art的similar参数，可按name调用相似数据，可在视频调用相似名称的文章。
+                            <br>3，优化静态生成功能，避免显示超时。
+                            <br>4，修改播放器禁用后前台不显示播放组，后台显示【禁用】字样。
+                            <br>5，增加泥巴影音播放器。
+                            <br>6，增加[vod:classname]调用剧情分类，只显示名称。
+                            <br>7，修复已知BUG。
+                            <br>8，其他细节的调整。
+                            <br>9，注意：更新完毕后，请点击【 更新数据缓存 】。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2015.02.09</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复vod标签topic参数解析失败的问题。
+                            <br>2，修复用户组权限判断的问题。
+                            <br>3，修复后台编辑视频，可看用户组显示不正确的问题。
+                            <br>4，修复用户推广可以刷分的问题。
+                            <br>5，修复开启缓存时文章分页只显示第一页内容的问题。
+                            <br>6，新增vod标签调用相似相关数据的similar参数，支持tag、主演、导演。
+                            <br>7，优化站外入库脚本，增强容错能力。
+                            <br>8，采集参数配置二次更新规则增加副标题选项。
+                            <br>9，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2015.01.24</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复自定义视频和文章首页静态文件名不启作用的问题。
+                            <br>2，修复同步远程图片每目录保存500文件不启作用的问题。
+                            <br>3，修复定时生成脚本xml和rss报错的问题。
+                            <br>4，修复保存统计代码的问题。
+                            <br>5，集数列表标签(play,down)更新，支持多组播放器并排横版排列模式，参数type=mode2。
+                            <br>6，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.12.02</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复前台某些操作提示quote的错误。
+                            <br>2，修复播放页面评论显示的问题。
+                            <br>3，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.11.17</h2></div>
+                        <blockquote class="layui-elem-quote">1，增强安全性，修复某个sql注入漏洞。
+                            <br>2，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.11.07</h2></div>
+                        <blockquote class="layui-elem-quote">1，新增播放地址和下载地址区域的批量上传附件功能。
+                            <br>2，修复[vod:playfrom][vod:playshow]标签显示的问题。
+                            <br>3，修复更新采集和定时采集文件。
+                            <br>4，评论管理点击显示所属数据。
+                            <br>5，后台登录验证由cookie改为session。
+                            <br>6，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.10.18</h2></div>
+                        <blockquote class="layui-elem-quote">1，新增肥佬影音、非凡影音播放器。
+                            <br>2，更新采集类型转换，避免联盟资源库采集的数据播放类型转换失败。
+                            <br>3，更新定时任务采集脚本，支持采集多页。
+                            <br>4，link、 menu 、class 标签支持num参数（限制调用数量）。
+                            <br>5，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.10.10</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复 搜狐，搜狐高清，风行，pptv 播放器。
+                            <br>2，新增迅雷看看调用看看客户端播放器。
+                            <br>3，更新360防护脚本，修复一个sleep函数注入引发mysql拒绝服务的漏洞。
+                            <br>4，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.09.21</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复后台视频管理地区和语言筛选的问题。
+                            <br>2，修复用户中心密码可以为空的问题。
+                            <br>3，修复视频下载地址服务器组无法保存的问题。
+                            <br>4，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.08.30</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复静态生成当天文章提示无数据的问题。
+                            <br>2，修复搜索页面的一个sql注入漏洞。
+                            <br>3，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.08.09</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复备份数据库无法备份class剧情分类表的问题。
+                            <br>2，修复开启缓存后剧情分类筛选显示同样内容的问题。
+                            <br>3，其他细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.07.18</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复一个xss跨站脚本漏洞。
+                            <br>2，修改播放器代码，避免被360拦截。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.07.16</h2></div>
+                        <blockquote class="layui-elem-quote">1，部分代码细节的调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.07.14</h2></div>
+                        <blockquote class="layui-elem-quote">1，站点配置新增搜索时间间隔配置项。
+                            <br>2，修复批量生成数据时内容页面会被下载页面覆盖的问题。
+                            <br>3，其他细节调整。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.07.06</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复站外入库遇到多个大分类下有重复名称时剧情小分类入库的问题。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.07.02</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复一个在缓存目录下创建任意目录的漏洞。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.06.27</h2></div>
+                        <blockquote class="layui-elem-quote">1，优化sql注入防护脚本，防止多个注入漏洞。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.06.02</h2></div>
+                        <blockquote class="layui-elem-quote">1，部分细节处理。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.06.01</h2></div>
+                        <blockquote class="layui-elem-quote">1，部分细节处理。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.05.27</h2></div>
+                        <blockquote class="layui-elem-quote">1，紧急修复多个系统漏洞，包含多个SQL注入和后台getshell问题。
+                            <br>2，修复开启自动生成缩略图后部分图片出错的问题。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.05.23</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复专题管理无法添加数据的问题。
+                            <br>2，修复部分特殊情况下生成分页首页链接不正确的问题。
+                            <br>3，修复定时生成任务脚本。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.05.14</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复调用小分类标签链接不对的问题。
+                            <br>2，增加视频批量操作功能，可批量删除和设置数据。
+                            <br>3，站外入库接口增加剧情分类d_class字段。
+                            <br>4，搜索页面{page:class}修改为{page:classid}。
+                            <br>5，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.05.10</h2></div>
+                        <blockquote class="layui-elem-quote">1，开放剧情小分类功能。
+                            <br>2，开源部分代码，方便大家二次开发。
+                            <br>3，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.05.01</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复生成百度、谷歌地图时间不对的问题。
+                            <br>2，修复开启缓存时评论留言本显示的问题。
+                            <br>3，新增{maccms:php type=code} 标签支持页面内嵌入php代码。
+                            <br>4，修复报错功能，在留言管理中可看到。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.04.16</h2></div>
+                        <blockquote class="layui-elem-quote">1，优化vod和art的day参数，改为day和days两个参数，day调用指定某1天的数据，days调用指定某天以来的数据。
+                            <br>2，新增[vod:playlinks]和[vod:downlinks]标签，可以显示出所有的播放组链接。
+                            <br>3，修复部分环境下数据库管理的备份列表只显示1个的问题。
+                            <br>4，修复qq登陆后，登陆框还是显示登录不切换显示的问题。
+                            <br>5，升级播放地址功能，可在一个播放组里添加不同类型的数据，例如可以在优酷播放组里添加土豆、快播数据。播放地址支持2段或3段格式： 集数名称$播放地址$指定播放类型
+                            <br>6，新增加西瓜影音和先锋影音播放器。
+                            <br>7，修复迅播gvod播放器。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.04.06</h2></div>
+                        <blockquote class="layui-elem-quote">1，采集配置增加是否开启随机评分功能。
+                            <br>2，修复恢复分卷数据库的功能。
+                            <br>3，修复联盟资源库采集某些接口地址无法播放的问题。
+                            <br>4，其他细节的调整优化。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.03.30</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复专题管理没有显示分页的问题。
+                            <br>2，加强留言和评论内容的验证，无中文不可留言。
+                            <br>3，增加是否压缩输出html代码的功能，减少页面大小提高访问速度。
+                            <br>4，其他细节的调整优化。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.03.17</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复静态生成当天内容的问题。
+                            <br>2，修复多个sql注入漏洞。
+                            <br>3，完善在线更新程序分为3步骤：1，文件更新；2，数据库更新；3，缓存更新。
+                            <br>4，商业版增加剧情小分类功能。
+                            <br>5，播放页静态模式下自动下一集的问题。
+                            <br>6，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.03.12</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复开启缓存后搜索页面显示数据的问题。
+                            <br>2，修复文章内容翻页显示数据的问题。
+                            <br>3，修复文章内容页点击量显示的问题。
+                            <br>4，修复采集入库随机评分的问题。
+                            <br>5，修复部分安全性问题。
+                            <br>6，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.02.20</h2></div>
+                        <blockquote class="layui-elem-quote">1，修复文章内容标签html内容被过滤的问题。
+                            <br>2，修复同步下载图片错乱的问题。
+                            <br>3，修复QQ登录按钮转向到普通注册页面的问题。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.01.14</h2></div>
+                        <blockquote class="layui-elem-quote">1，更新百度、快播、酷播播放器文件，兼容更多浏览器。
+                            <br>2，修复生成分类列表静态页面10页以后分页链接错误的问题。
+                            <br>3，修复播放器管理保存特殊字符转码的问题。
+                            <br>4，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">
+                            <h2>2014.01.03</h2></div>
+                        <blockquote class="layui-elem-quote">1，更新在线升级文件，支持php5.2和php5.3两个版本程序在线更新。
+                            <br>2，修复文章content,contenttext len参数的问题。
+                            <br>3，修复文章tag标签的问题。
+                            <br>4，修复rewrite规则和配置路径。
+                            <br>5，其他细节。</blockquote>
+                        <ul></ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-footer footer footer-index">
+        <div class="layui-main">
+            <p>&copy; 2018-2019 <a href="/">www.maccms.tk</a>MIT license</p>
+            <p>
+                <a class="layui-hide-xs" href="javascript:if(confirm('https://www.bt.cn/?from=maccms'))window.location='https://www.bt.cn/?from=maccms'" target="_blank">宝塔面板</a>
+                <a href="javascript:if(confirm('https://github.com/maccmspro'))window.location='https://github.com/maccmspro'" target="_blank">Github</a>
+                <a href="javascript:;" target="_blank">又拍云</a>
+                <a href="javascript:if(confirm('http://www.miibeian.gov.cn/'))window.location='http://www.miibeian.gov.cn/'" target="_blank">冀ICP备14010841号</a></p>
+            <p class="layui-hide-xs">声明：请在遵守法律的前提下使用苹果程序，对用户在使用过程中的信息内容本站不负任何责任！</p>
+        </div>
+        <div class="site-tree-mobile layui-hide">
+            <i class="layui-icon">&#xe602;</i></div>
+        <div class="site-mobile-shade"></div>
+        <script src="//cdn.staticfile.org/layui/2.4.3/layui.js" charset="utf-8"></script>
+        <script>
+            layui.config({
+                base: '/static/js/',
+                version: '20190830'
+            }).use('global');</script>
+        <span style="display:none;"></span>
+    </div>
+</body>
+</html>
